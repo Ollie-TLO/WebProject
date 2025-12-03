@@ -17,7 +17,7 @@
 			</div>
 			<h1>Certificate IV in IT (Programming) Web Tech Portfolio</h1>
 		</a>
-		<nav class="self-start md:self-center">
+		<nav class="self-start md:self-center border-t md:border-t-0 md:border-l h-2 border-polarBlue-500/30 ">
 			<ul class="grid grid-cols-3 gap-2">
 				<li><a href="./index.html">Home</a></li>
 				<li><a href="./contact.html">Contact</a></li>
@@ -31,31 +31,46 @@
 </header>
 
 <main class="bg-polarBlue-50  text-polarBlue-900">
-	<form id="contactForm">
-		<div class="flex flex-col p-8 gap-2">
-			<h1 class="font-bold text-3xl">Contact us</h1>
-			<div>
-				<label for="name" class="font-bold">Name</label>
-				<span id="nameFieldError" class="p-6 helpMessage text-red-500 text hidden" >Name letters only</span>
-			</div>
-			<input id="nameField" type="text" name="name" placeholder="Name" class="px-3 placeholder:polarBlue-500 focus:polarBlue-500">
+	<div class="flex flex-col p-8 gap-4">
+		<h1 class="font-bold text-3xl">Project Ninja API Demonstrator</h1>
 
-			<div>
-				<label for="name" class="font-bold">Email address</label>
-				<span id="emailFieldError" class="p-6 helpMessage text-red-500 text hidden" >Must be a valid email address</span>
+		<form id="apiToolForm">
+			<!-- So much wrong here, like baselines not matching -->
+			<div class="labeledBlock">
+				<span class="font-medium">Select Ninja API: </span>
+				<div>
+					<div>
+						<input type="checkbox" name="checkGroupE" id="exercisesCB" value="exercises" class="checkGroup">
+						<label for="exercisesCB" class="font-medium">Exercises</label>
+					</div>
+					<div>
+						<input type="checkbox" name="checkGroupP" id="validatePhoneCB" value="phone" class="checkGroup">
+						<label for="validatePhoneCB" class="font-medium">Validate Phone</label>
+					</div>
+				</div>
 			</div>
-			<input id="emailField" type="text" name="email" placeholder="Email address" class="placeholder:polarBlue-500 focus:polarBlue-500">
-
-			<div>
-				<label for="name" class="font-bold">Message</label>
-				<span id="messageFieldError" class="p-6 helpMessage text-red-500 text hidden">Message must be less than 1000 characters in length</span>
+			<div class="labeledBlock">
+				<span><label for="queryString" class="font-medium">Query:</label></span>
+				<div>
+					<input type="text" id="queryString" size="30" placeholder="First, select an API">
+				</div>
 			</div>
-			<textarea id="messageField" name="email" placeholder="Email address" class="placeholder:polarBlue-500 focus:polarBlue-500" rows="10"></textarea>
-
-			<button id="Send" class="self-center w-auto inline-flex flex-shrink-0 px-5 py-1 m-4 rounded-2xl border-2 bg-white border-black hover:border-polarBlue-500 text-black font-bold hover:text-polarBlue-500 transition duration-100 ease-in-out">
-				Button</button>
-		</div>
-	</form>
+			<div class="labeledBlock">
+				<span></span>
+				<div class="buttonRow">
+					<button type="submit" id="executeButton" class="self-center w-auto inline-flex font-medium flex-shrink-0 px-5 py-0 m-4 rounded-2xl border-2 bg-white border-black hover:border-polarBlue-500 text-black font-bold hover:text-polarBlue-500 transition duration-100 ease-in-out">
+						Execute</button>
+					<button type="button" id="clearButton">Clear Result</button>
+				</div>
+			</div>
+			<div class="labeledBlock">
+				<span><label for="responseString" class="font-medium">Response:</label></span>
+				<div>
+					<textarea id="responseString" readonly rows="15" cols="60"></textarea>
+				</div>
+			</div>
+		</form>
+	</div>
 </main>
 
 <footer class="text-sm bg-polarBlue-900 text-polarBlue-200">
