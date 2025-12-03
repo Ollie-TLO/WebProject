@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Tim Oliver | Web Tech | Cert 4 IT Prog</title>
+	<link rel="stylesheet" href="./assets/css/site.css">
+	<script src="./assets/js/ninja-api.js" defer></script>
+</head>
+<body>
+<header class="sticky top-0 z-10 text-sm bg-polarBlue-900 text-polarBlue-200">
+	<div class="flex flex-col md:flex-row justify-between p-6 gap-2">
+		<a class="flex items-center mb-4 title-font md:mb-0 gap-2" href="./">
+			<div class="h-8 w-8 rounded">
+				<img src="https://placehold.co/32x32/0e1620/FFF?text=C+IV+IT\nProg" class="h-full w-full object-cover scale-150">
+			</div>
+			<h1>Certificate IV in IT (Programming) Web Tech Portfolio</h1>
+		</a>
+		<nav class="self-start md:self-center">
+			<ul class="grid grid-cols-3 gap-2">
+				<li><a href="./index.html">Home</a></li>
+				<li><a href="./contact.html">Contact</a></li>
+				<li><a href="./resume.html">Resume</a></li>
+				<li><a href="./about.html">About</a></li>
+				<li><a href="./project.html">Project</a></li>
+				<li><a href="./my-work.html">My Work</a></li>
+			</ul>
+		</nav>
+	</div>
+</header>
+
+<main class="bg-polarBlue-50  text-polarBlue-900">
+	<form id="contactForm">
+		<div class="flex flex-col p-8 gap-2">
+			<h1 class="font-bold text-3xl">Contact us</h1>
+			<div>
+				<label for="name" class="font-bold">Name</label>
+				<span id="nameFieldError" class="p-6 helpMessage text-red-500 text hidden" >Name letters only</span>
+			</div>
+			<input id="nameField" type="text" name="name" placeholder="Name" class="px-3 placeholder:polarBlue-500 focus:polarBlue-500">
+
+			<div>
+				<label for="name" class="font-bold">Email address</label>
+				<span id="emailFieldError" class="p-6 helpMessage text-red-500 text hidden" >Must be a valid email address</span>
+			</div>
+			<input id="emailField" type="text" name="email" placeholder="Email address" class="placeholder:polarBlue-500 focus:polarBlue-500">
+
+			<div>
+				<label for="name" class="font-bold">Message</label>
+				<span id="messageFieldError" class="p-6 helpMessage text-red-500 text hidden">Message must be less than 1000 characters in length</span>
+			</div>
+			<textarea id="messageField" name="email" placeholder="Email address" class="placeholder:polarBlue-500 focus:polarBlue-500" rows="10"></textarea>
+
+			<button id="Send" class="self-center w-auto inline-flex flex-shrink-0 px-5 py-1 m-4 rounded-2xl border-2 bg-white border-black hover:border-polarBlue-500 text-black font-bold hover:text-polarBlue-500 transition duration-100 ease-in-out">
+				Button</button>
+		</div>
+	</form>
+</main>
+
+<footer class="text-sm bg-polarBlue-900 text-polarBlue-200">
+	<div class="flex flex-col md:flex-row items-center justify-between mx-auto gap-0">
+		<section>
+			<a class="flex items-center p-6 m-6 pb-8 gap-2 border-b md:border-b-0 md:border-r border-polarBlue-500/30 md:pb-6 text-polarBlue-200 h-2 hover:text-white transition duration-100 ease-in-out">
+				<div class="w-12 overflow-hidden rounded">
+					<img src="https://placehold.co/64x64/0e1620/FFF?text=C+IV+IT\nProg" class="h-full w-full object-cover scale-150">
+				</div>
+				<h1>AnSite</h1>
+			</a>
+		</section>
+		<section>
+			<div class="flex flex-wrap">
+				<a href="./copyright.html" class="hover:text-white transition duration-100 ease-in-out">
+					©2025 Tim Oliver. All rights reserved.
+				</a>
+			</div>
+		</section>
+		<section>
+			<div class="flex items-center p-6 m-6 border-t md:border-t-0 md:border-l h-2 border-polarBlue-500/30 md:mr-auto gap-2">
+				<a href="https://www.northmetrotafe.wa.edu.au"
+				class="hover:text-white transition duration-100 ease-in-out">TAFE</a>
+				<a href="https://components.dev.screencraft.net.au/"
+				class="hover:text-white transition duration-100 ease-in-out">ScreenCraft</a>
+				<a href="email:20126140@tafe.wa.edu.au"
+				class="hover:text-white transition duration-100 ease-in-out">Contact</a>
+			</div>
+		</section>
+	</div>
+</footer>
+</body>
+</html>
