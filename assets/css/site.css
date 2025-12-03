@@ -718,10 +718,6 @@ video {
   border-color: rgb(0 0 0 / var(--tw-border-opacity, 1));
 }
 
-.border-polarBlue-500\/30 {
-  border-color: rgb(87 130 183 / 0.3);
-}
-
 .border-polarBlue-500\/50 {
   border-color: rgb(87 130 183 / 0.5);
 }
