@@ -53,8 +53,8 @@ Use either:
 Name for Colour     | RGB (rrr, ggg, bbb) | HEX (#rrggbb)
 --------------------|---------------------|--------------
 white               |    255, 255, 255    |    #ffffff
-black               |      0,   0,   0     |    #000000
-polarBlue-50        |    232, 234, 241     |    #E8eaF1
-polarBlue-200       |    209, 221, 236     |    #d1ddec
-polarBlue-500       |     87, 130, 183     |    #5782B7
-polarBlue-900       |     14,  22,  32     |    #0E1620
+black               |      0,   0,   0    |    #000000
+polarBlue-50        |    232, 234, 241    |    #E8eaF1
+polarBlue-200       |    209, 221, 236    |    #d1ddec
+polarBlue-500       |     87, 130, 183    |    #5782B7
+polarBlue-900       |     14,  22,  32    |    #0E1620
